@@ -1,0 +1,81 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+        <link rel="stylesheet" href="App_Themes/changmin/Changmin.css" type="text/css"/>
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        
+        
+        <div>
+      
+        <div id="background-green">
+		background
+	</div>
+	<div class="page">
+		<div class="home-page">
+			<div class="sidebar">
+				&nbsp;<ul>
+					<li class="home">
+						<a href="Home.aspx">Home</a>
+					</li>
+					<li class="books">
+						<a href="Book.aspx">Books</a>
+					</li>
+					<li class="addbook">
+						<a href="AddBook.aspx">Add book</a>
+					</li>
+					<li class="search">
+						<a href="Searchpage.aspx">Search</a>
+					</li>
+					
+				</ul>
+				             
+			</div>
+			<div class="body">
+				<div class="content-home">
+					
+					<div class="featured">
+						<img src="images/Main.jpg" alt=""/>
+					</div>
+                    <asp:ContentPlaceHolder id="contentbody" runat="server">
+
+
+             </asp:ContentPlaceHolder>
+					
+				</div>
+				<div class="footer">
+					<p>
+						&#169;2017 Assingment Fall Semester Web Application. #300895984 Changmin Shin
+					</p>
+					<ul>
+						<li>
+							<a href="Home.aspx">Home</a>
+						</li>
+						<li>
+							<a href="Books.aspx">Books</a>
+						</li>
+						<li>
+							<a href="AddBooks.aspx">Add Books</a>
+						</li>
+						<li>
+							<a href="Search.aspx">Search</a>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+         
+    </div>
+             
+    </form>
+</body>
+</html>
